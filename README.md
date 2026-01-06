@@ -1,96 +1,85 @@
-![banner](./assets/banner.svg)
+<p align="center">
+  <img src="./assets/banner.svg" alt="feng-systems banner" width="100%" />
+</p>
 
-# 👋 Hi, I'm Feng
+<h2 align="center">feng-systems</h2>
 
-```text
-AI-assisted Systems Engineer
-```
-
-I build **reliable, deterministic systems** for the real world.
-AI is a tool — engineering is the foundation.
-
----
-
-## 🧠 What I Do
-
-* 🔧 **Embedded & Industrial Systems**
-* 🤖 **AI-assisted Engineering**
-* 🧪 **Test Infrastructure & HIL Systems**
-* ⚙️ **Automation, Diagnostics, Long-running Systems**
-
-I focus on systems that **run for years**, not demos that run once.
+<p align="center">
+  AI-assisted · embedded · automation · edge<br/>
+  <code>engineering_first(); determinism_matters(); // build for years</code>
+</p>
 
 ---
 
-## 🛠️ Technical Stack
+## 👋 About Me
 
-### 🧩 Embedded / Control
-
-* STM32 · ESP32
-* Bare-metal · RTOS
-* CAN · CAN-FD · UDS · Modbus
-
-### 🧪 Test & Automation
-
-* HIL / EOL / Aging Test Systems
-* LabVIEW · Python
-* Industrial I/O · Relay Control · Power Measurement
-
-### 🤖 AI (Applied, Not Hype)
-
-* Edge AI
-* Data-driven diagnostics
-* AI-assisted testing & development workflows
-
-### 🧱 Systems & Tools
-
-* Python · Go
-* Linux · Docker
-* Git · CI-friendly tooling
+- 🔧 Embedded / Automation / Test Infrastructure Engineer  
+- 🤖 Focused on **AI-assisted engineering**, deterministic systems, and long-term maintainability  
+- 🧠 Believe in **engineering-first thinking**, not demo-driven development  
 
 ---
 
-## 🧭 Engineering Philosophy
+## 🧩 Technical Focus
 
-```text
-Engineering first.
-Determinism matters.
-AI assists, systems decide.
-```
+**Embedded & Low-Level**
+- MCU / SoC: STM32, ESP32, RTOS, Bare-metal
+- Communication: CAN / CAN-FD / LIN / Modbus / TCP
+- Real-time & determinism, timing-critical systems
 
-* Prefer **explicit control** over hidden magic
-* Trust **specs, logs, and measurements**
-* Build things that others can **maintain and extend**
+**Automation & Test**
+- HIL / SIL / FCT / EOL test systems
+- Test infrastructure & tooling
+- Hardware–software co-design
 
----
-
-## 📌 Featured Work (WIP)
-
-> Selected projects around embedded systems, automation, and AI-assisted tooling.
-
-* 🔹 CAN / UDS tooling
-* 🔹 Test system frameworks
-* 🔹 Automation utilities
-* 🔹 AI-assisted diagnostics experiments
-
-(More coming as projects mature.)
+**AI-assisted Engineering**
+- AI as a *productivity amplifier*, not a black box
+- Code generation + human verification
+- Edge AI & intelligent diagnostics
 
 ---
 
-## 📍 Location
+## 🛠 Tech Stack
 
-Hefei, China
-
----
-
-## 🤝 Open to
-
-* Technical collaboration
-* System-level discussions
-* Applied AI in industrial / embedded domains
+<p>
+  <img src="https://img.shields.io/badge/C-C99-00599C?style=flat&logo=c&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C++-Modern-00599C?style=flat&logo=cplusplus"/>
+  <img src="https://img.shields.io/badge/Python-Automation-3776AB?style=flat&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-Embedded-FCC624?style=flat&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/RTOS-Deterministic-2C2C2C?style=flat"/>
+</p>
 
 ---
 
-> *“Build systems that behave, not systems that impress.”*
+## 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=feng-systems&show_icons=true&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=feng-systems&theme=tokyonight&hide_border=true" />
+</p>
 
 ---
+
+## 🧠 Engineering Philosophy
+
+> Build systems that survive real usage,  
+> not just presentations.
+
+- Prefer **clarity over cleverness**
+- Prefer **determinism over magic**
+- Prefer **systems that age well**
+
+---
+
+## 📫 Contact / Presence
+
+- GitHub: https://github.com/feng-systems  
+- (Add email / blog / Notion / personal site here if needed)
+
+---
+
+<p align="center">
+  <sub>⚡ cyber-neural · deterministic · engineered</sub>
+</p>
