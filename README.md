@@ -5,7 +5,7 @@
 <h2 align="center">feng-systems</h2>
 
 <p align="center">
-  AI-assisted · embedded · automation · edge<br/>
+  AI-assisted · Embedded · Automation · Edge AI<br/>
   <code>engineering_first(); determinism_matters(); // build for years</code>
 </p>
 
