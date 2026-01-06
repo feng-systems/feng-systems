@@ -53,12 +53,10 @@
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats-ten-theta-74.vercel.app/api?username=feng-systems&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="170" src="https://github-readme-stats-ten-theta-74.vercel.app/api?username=feng-systems&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="170" src="https://github-readme-streak-stats-amber-zeta.vercel.app/?user=feng-systems&theme=tokyonight&hide_border=true" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats-ten-theta-74.vercel.app/api/top-langs?username=feng-systems&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
 
 ---
 
