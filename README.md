@@ -57,7 +57,7 @@
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=feng-systems&theme=tokyonight&hide_border=true&v=1" />
+  <img src="https://github-readme-stats-ten-theta-74.vercel.app/api/top-langs?username=feng-systems&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
