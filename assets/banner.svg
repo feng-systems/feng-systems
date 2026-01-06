@@ -1,0 +1,257 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070A12"/>
+      <stop offset="55%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#060812"/>
+    </linearGradient>
+
+    <!-- Neon accents -->
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#7C4DFF" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#00FFB3" stop-opacity="0.90"/>
+    </linearGradient>
+
+    <!-- Soft glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.65 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Fine grid pattern -->
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+      <path d="M 12 0 L 12 24 M 0 12 L 24 12" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+
+    <!-- Dots pattern -->
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#9AD7FF" opacity="0.10"/>
+    </pattern>
+
+    <!-- Subtle noise (SVG-only approximation) -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="matrix" in="noise"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0.08 0" result="alphaNoise"/>
+      <feComposite in="alphaNoise" in2="SourceGraphic" operator="over"/>
+    </filter>
+
+    <!-- Clip to keep text clean and never overflow -->
+    <clipPath id="text-clip">
+      <rect x="340" y="85" width="600" height="150" rx="10"/>
+    </clipPath>
+
+    <!-- Typography -->
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .sans { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#grid)"/>
+  <rect width="1280" height="320" fill="url(#dots)" opacity="0.45"/>
+
+  <!-- Decorative glow blobs -->
+  <g filter="url(#glow)" opacity="0.55">
+    <circle cx="160" cy="80" r="90" fill="#00E5FF" opacity="0.10"/>
+    <circle cx="1120" cy="250" r="120" fill="#7C4DFF" opacity="0.10"/>
+    <circle cx="980" cy="85" r="70" fill="#00FFB3" opacity="0.08"/>
+  </g>
+
+  <!-- Ultra-High-Density Neural Mesh (background layer) -->
+  <g filter="url(#glow)" stroke="url(#neon)" stroke-width="0.9" fill="none" opacity="0.48">
+    <!-- Primary Long Spans -->
+    <path d="M 40 40 L 160 30 L 300 50 L 480 30 L 650 50 L 850 30 L 1050 50 L 1240 30" />
+    <path d="M 50 80 L 180 70 L 320 90 L 500 70 L 700 90 L 900 70 L 1100 90 L 1250 70" />
+    <path d="M 30 120 L 150 130 L 340 110 L 520 130 L 720 110 L 920 130 L 1120 110 L 1260 130" opacity="0.8"/>
+    <path d="M 40 160 L 170 170 L 360 150 L 540 170 L 740 150 L 940 170 L 1140 150 L 1240 170" />
+    <path d="M 30 200 L 160 210 L 330 190 L 560 210 L 760 190 L 960 210 L 1160 190 L 1250 210" />
+    <path d="M 50 240 L 180 250 L 350 230 L 580 250 L 780 230 L 980 250 L 1180 230 L 1240 250" opacity="0.8"/>
+    <path d="M 40 280 L 150 290 L 340 300 L 520 280 L 720 300 L 920 280 L 1120 300 L 1230 280" />
+
+    <!-- Dense Cross Weaving (Zig-Zag Vertical) -->
+    <path d="M 160 30 L 180 70 L 150 130 L 170 170 L 160 210 L 180 250 L 150 290" opacity="0.7"/>
+    <path d="M 300 50 L 320 90 L 340 110 L 360 150 L 330 190 L 350 230 L 340 300" opacity="0.7"/>
+    <path d="M 480 30 L 500 70 L 520 130 L 540 170 L 560 210 L 580 250 L 520 280" opacity="0.6"/>
+    <path d="M 650 50 L 700 90 L 720 110 L 740 150 L 760 190 L 780 230 L 720 300" opacity="0.6"/>
+    <path d="M 850 30 L 900 70 L 920 130 L 940 170 L 960 210 L 980 250 L 920 280" opacity="0.7"/>
+    <path d="M 1050 50 L 1100 90 L 1120 110 L 1140 150 L 1160 190 L 1180 230 L 1120 300" opacity="0.7"/>
+    <path d="M 1240 30 L 1250 70 L 1260 130 L 1240 170 L 1250 210 L 1240 250 L 1230 280" opacity="0.6"/>
+    <path d="M 40 40 L 50 80 L 30 120 L 40 160 L 30 200 L 50 240 L 40 280" opacity="0.6"/>
+
+    <!-- Micro Interconnects -->
+    <path d="M 180 70 L 300 50" opacity="0.5"/><path d="M 320 90 L 480 30" opacity="0.5"/>
+    <path d="M 500 70 L 650 50" opacity="0.5"/><path d="M 700 90 L 850 30" opacity="0.5"/>
+    <path d="M 900 70 L 1050 50" opacity="0.5"/><path d="M 1100 90 L 1240 30" opacity="0.5"/>
+
+    <path d="M 150 130 L 360 150" opacity="0.4"/><path d="M 340 110 L 540 170" opacity="0.4"/>
+    <path d="M 520 130 L 740 150" opacity="0.4"/><path d="M 720 110 L 940 170" opacity="0.4"/>
+    <path d="M 920 130 L 1140 150" opacity="0.4"/><path d="M 1120 110 L 1240 170" opacity="0.4"/>
+
+    <path d="M 170 170 L 330 190" opacity="0.4"/><path d="M 360 150 L 560 210" opacity="0.4"/>
+    <path d="M 540 170 L 760 190" opacity="0.4"/><path d="M 740 150 L 960 210" opacity="0.4"/>
+    <path d="M 940 170 L 1160 190" opacity="0.4"/>
+
+    <path d="M 160 210 L 350 230" opacity="0.5"/><path d="M 330 190 L 580 250" opacity="0.5"/>
+    <path d="M 560 210 L 780 230" opacity="0.5"/><path d="M 760 190 L 980 250" opacity="0.5"/>
+    <path d="M 960 210 L 1180 230" opacity="0.5"/>
+  </g>
+
+  <!-- Ultra-Dense Nodes (steady base nodes) -->
+  <g filter="url(#glow)">
+    <g fill="#00E5FF" opacity="0.72">
+      <circle cx="40" cy="40" r="2.5"/><circle cx="160" cy="30" r="2.5"/><circle cx="300" cy="50" r="2.8"/>
+      <circle cx="480" cy="30" r="2.5"/><circle cx="650" cy="50" r="2.5"/>
+      <circle cx="50" cy="80" r="2.5"/><circle cx="180" cy="70" r="2.8"/><circle cx="320" cy="90" r="2.5"/>
+      <circle cx="500" cy="70" r="2.8"/><circle cx="700" cy="90" r="2.5"/>
+      <circle cx="30" cy="120" r="2.5"/><circle cx="150" cy="130" r="2.8"/><circle cx="340" cy="110" r="2.5"/>
+      <circle cx="520" cy="130" r="2.8"/><circle cx="720" cy="110" r="2.5"/>
+      <circle cx="40" cy="160" r="2.5"/><circle cx="170" cy="170" r="2.8"/><circle cx="360" cy="150" r="2.5"/>
+      <circle cx="540" cy="170" r="2.8"/><circle cx="740" cy="150" r="2.5"/>
+      <circle cx="30" cy="200" r="2.5"/><circle cx="160" cy="210" r="2.8"/><circle cx="330" cy="190" r="2.5"/>
+      <circle cx="560" cy="210" r="2.8"/><circle cx="760" cy="190" r="2.5"/>
+      <circle cx="50" cy="240" r="2.5"/><circle cx="180" cy="250" r="2.8"/><circle cx="350" cy="230" r="2.5"/>
+      <circle cx="580" cy="250" r="2.8"/><circle cx="780" cy="230" r="2.5"/>
+      <circle cx="40" cy="280" r="2.5"/><circle cx="150" cy="290" r="2.8"/><circle cx="340" cy="300" r="2.5"/>
+      <circle cx="520" cy="280" r="2.8"/><circle cx="720" cy="300" r="2.5"/>
+    </g>
+
+    <g fill="#7C4DFF" opacity="0.68">
+      <circle cx="850" cy="30" r="2.5"/><circle cx="1050" cy="50" r="2.8"/><circle cx="1240" cy="30" r="2.5"/>
+      <circle cx="900" cy="70" r="2.5"/><circle cx="1100" cy="90" r="2.8"/><circle cx="1250" cy="70" r="2.5"/>
+      <circle cx="920" cy="130" r="2.5"/><circle cx="1120" cy="110" r="2.8"/><circle cx="1260" cy="130" r="2.5"/>
+      <circle cx="940" cy="170" r="2.5"/><circle cx="1140" cy="150" r="2.8"/><circle cx="1240" cy="170" r="2.5"/>
+      <circle cx="960" cy="210" r="2.5"/><circle cx="1160" cy="190" r="2.8"/><circle cx="1250" cy="210" r="2.5"/>
+      <circle cx="980" cy="250" r="2.5"/><circle cx="1180" cy="230" r="2.8"/><circle cx="1240" cy="250" r="2.5"/>
+      <circle cx="920" cy="280" r="2.5"/><circle cx="1120" cy="300" r="2.8"/><circle cx="1230" cy="280" r="2.5"/>
+    </g>
+  </g>
+
+  <!-- Panel mask to calm the background under the text -->
+  <g>
+    <rect x="340" y="72" width="600" height="176" rx="18" fill="#0B1220" opacity="0.92"/>
+  </g>
+
+  <!-- Micro layer (connections + flickering micro nodes) -->
+  <g filter="url(#glow)">
+    <!-- Micro connections (stable, non-animated) -->
+    <g stroke="url(#neon)" stroke-width="0.5" fill="none" opacity="0.22">
+      <path d="M 100 35 L 160 30"/><path d="M 230 40 L 300 50"/><path d="M 390 40 L 480 30"/>
+      <path d="M 565 40 L 650 50"/><path d="M 750 40 L 850 30"/><path d="M 950 40 L 1050 50"/>
+      <path d="M 1145 40 L 1240 30"/>
+
+      <path d="M 115 75 L 180 70"/><path d="M 250 80 L 320 90"/><path d="M 410 80 L 500 70"/>
+      <path d="M 600 80 L 700 90"/><path d="M 800 80 L 900 70"/><path d="M 1000 80 L 1100 90"/>
+      <path d="M 1175 80 L 1250 70"/>
+
+      <path d="M 90 125 L 150 130"/><path d="M 245 120 L 340 110"/><path d="M 430 120 L 520 130"/>
+      <path d="M 620 120 L 720 110"/><path d="M 820 120 L 920 130"/><path d="M 1020 120 L 1120 110"/>
+      <path d="M 1190 120 L 1260 130"/>
+
+      <path d="M 105 165 L 170 170"/><path d="M 265 160 L 360 150"/><path d="M 450 160 L 540 170"/>
+      <path d="M 640 160 L 740 150"/><path d="M 840 160 L 940 170"/><path d="M 1040 160 L 1140 150"/>
+      <path d="M 1190 160 L 1240 170"/>
+
+      <path d="M 95 205 L 160 210"/><path d="M 245 200 L 330 190"/><path d="M 445 200 L 560 210"/>
+      <path d="M 660 200 L 760 190"/><path d="M 860 200 L 960 210"/><path d="M 1060 200 L 1160 190"/>
+      <path d="M 1205 200 L 1250 210"/>
+
+      <path d="M 115 245 L 180 250"/><path d="M 265 240 L 350 230"/><path d="M 465 240 L 580 250"/>
+      <path d="M 680 240 L 780 230"/><path d="M 880 240 L 980 250"/><path d="M 1080 240 L 1180 230"/>
+      <path d="M 1210 240 L 1240 250"/>
+
+      <path d="M 95 285 L 150 290"/><path d="M 245 295 L 340 300"/><path d="M 430 290 L 520 280"/>
+      <path d="M 620 290 L 720 300"/><path d="M 820 290 L 920 280"/><path d="M 1020 290 L 1120 300"/>
+      <path d="M 1175 290 L 1230 280"/>
+
+      <path d="M 245 120 L 180 70" opacity="0.18"/>
+      <path d="M 430 120 L 360 150" opacity="0.18"/>
+      <path d="M 620 120 L 540 170" opacity="0.16"/>
+      <path d="M 820 120 L 740 150" opacity="0.16"/>
+      <path d="M 1020 120 L 940 170" opacity="0.16"/>
+      <path d="M 450 160 L 350 230" opacity="0.16"/>
+      <path d="M 840 160 L 780 230" opacity="0.16"/>
+      <path d="M 1040 160 L 980 250" opacity="0.16"/>
+    </g>
+
+    <!-- Micro nodes (animated opacity only) -->
+    <g>
+      <!-- Group A: slow breathe -->
+      <g opacity="0.70">
+        <animate attributeName="opacity" values="0.28;0.78;0.35;0.70;0.28" dur="3.9s" repeatCount="indefinite"/>
+        <g fill="#00E5FF">
+          <circle cx="100" cy="35" r="2.0"/><circle cx="230" cy="40" r="2.0"/><circle cx="390" cy="40" r="2.0"/>
+          <circle cx="565" cy="40" r="2.0"/><circle cx="750" cy="40" r="2.0"/><circle cx="950" cy="40" r="2.0"/>
+          <circle cx="1145" cy="40" r="2.0"/>
+
+          <circle cx="115" cy="75" r="2.0"/><circle cx="250" cy="80" r="2.0"/><circle cx="410" cy="80" r="2.0"/>
+          <circle cx="600" cy="80" r="2.0"/><circle cx="800" cy="80" r="2.0"/><circle cx="1000" cy="80" r="2.0"/>
+          <circle cx="1175" cy="80" r="2.0"/>
+
+          <circle cx="90" cy="125" r="2.0"/><circle cx="245" cy="120" r="2.0"/><circle cx="430" cy="120" r="2.0"/>
+          <circle cx="620" cy="120" r="2.0"/><circle cx="820" cy="120" r="2.0"/><circle cx="1020" cy="120" r="2.0"/>
+          <circle cx="1190" cy="120" r="2.0"/>
+
+          <circle cx="105" cy="165" r="2.0"/><circle cx="265" cy="160" r="2.0"/><circle cx="450" cy="160" r="2.0"/>
+          <circle cx="640" cy="160" r="2.0"/><circle cx="840" cy="160" r="2.0"/><circle cx="1040" cy="160" r="2.0"/>
+          <circle cx="1190" cy="160" r="2.0"/>
+        </g>
+      </g>
+
+      <!-- Group B: faster flicker -->
+      <g opacity="0.62">
+        <animate attributeName="opacity" values="0.22;0.68;0.30;0.76;0.22" dur="2.6s" begin="0.7s" repeatCount="indefinite"/>
+        <g fill="#7C4DFF">
+          <circle cx="95" cy="205" r="2.0"/><circle cx="245" cy="200" r="2.0"/><circle cx="445" cy="200" r="2.0"/>
+          <circle cx="660" cy="200" r="2.0"/><circle cx="860" cy="200" r="2.0"/><circle cx="1060" cy="200" r="2.0"/>
+          <circle cx="1205" cy="200" r="2.0"/>
+
+          <circle cx="115" cy="245" r="2.0"/><circle cx="265" cy="240" r="2.0"/><circle cx="465" cy="240" r="2.0"/>
+          <circle cx="680" cy="240" r="2.0"/><circle cx="880" cy="240" r="2.0"/><circle cx="1080" cy="240" r="2.0"/>
+          <circle cx="1210" cy="240" r="2.0"/>
+
+          <circle cx="95" cy="285" r="2.0"/><circle cx="245" cy="295" r="2.0"/><circle cx="430" cy="290" r="2.0"/>
+          <circle cx="620" cy="290" r="2.0"/><circle cx="820" cy="290" r="2.0"/><circle cx="1020" cy="290" r="2.0"/>
+          <circle cx="1175" cy="290" r="2.0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Center "chip" frame (stroke + pins) -->
+  <g filter="url(#glow)" opacity="0.95">
+    <rect x="340" y="72" width="600" height="176" rx="18" fill="none" stroke="url(#neon)" stroke-width="1.6" opacity="0.90"/>
+  </g>
+
+  <!-- Text content (clipped) -->
+  <g clip-path="url(#text-clip)">
+    <text x="365" y="135" class="mono" font-size="48" fill="#EAF2FF" letter-spacing="0.5">feng-systems</text>
+    <text x="365" y="180" class="mono" font-size="18" fill="#9AD7FF" opacity="0.95">AI-assisted Systems Engineering · Embedded · Automation</text>
+    <text x="365" y="210" class="mono" font-size="18" fill="#C7D2FE" opacity="0.78">engineering_first(); determinism_matters(); </text>
+  </g>
+
+  <!-- Footer small info -->
+  <g opacity="0.80">
+    <text x="50" y="40" class="mono" font-size="20" fill="#ccfafdff">Geek · Linux · RTOS · Edge AI</text>
+    <text x="1200" y="300" class="mono" font-size="18" fill="#BBD6FF" opacity="0.7">v1.0</text>
+  </g>
+
+  <!-- Grain overlay -->
+  <rect width="1280" height="320" fill="transparent" filter="url(#grain)"/>
+</svg>
