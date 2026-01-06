@@ -74,7 +74,7 @@
 ## 📫 Contact / Presence
 
 - GitHub: https://github.com/feng-systems  
-- (Add email / blog / Notion / personal site here if needed)
+- Email: shaomaiwangzi@gmail.com
 
 ---
 
