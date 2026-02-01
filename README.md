@@ -2,7 +2,7 @@
   <img src="./assets/banner.svg" alt="VoidDel banner" width="100%" />
 </p>
 
-<h2 align="center">feng-systems</h2>
+<h2 align="center">VoidDel</h2>
 
 <p align="center">
   AI-assisted · Embedded · Automation · Edge AI<br/>
