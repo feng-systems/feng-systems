@@ -241,7 +241,7 @@
 
   <!-- Text content (clipped) -->
   <g clip-path="url(#text-clip)">
-    <text x="365" y="135" class="mono" font-size="48" fill="#EAF2FF" letter-spacing="0.5">feng-systems</text>
+    <text x="365" y="135" class="mono" font-size="48" fill="#EAF2FF" letter-spacing="0.5">VoidDel</text>
     <text x="365" y="180" class="mono" font-size="18" fill="#9AD7FF" opacity="0.95">AI-assisted Systems Engineering · Embedded · Automation</text>
     <text x="365" y="210" class="mono" font-size="18" fill="#C7D2FE" opacity="0.78">engineering_first(); determinism_matters(); </text>
   </g>
