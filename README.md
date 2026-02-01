@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="feng-systems banner" width="100%" />
+  <img src="./assets/banner.svg" alt="VoidDel banner" width="100%" />
 </p>
 
 <h2 align="center">feng-systems</h2>
